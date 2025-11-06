@@ -36,8 +36,8 @@ Make sure you have **Java 21** and **Maven** installed.
 Then, clone the repository and run the app:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/notes-app.git
-cd notes-app
+git clone https://github.com/AlfredoBenites/spring-notes-api.git
+cd spring-notes-api
 ./mvnw spring-boot:run
 ```
 
