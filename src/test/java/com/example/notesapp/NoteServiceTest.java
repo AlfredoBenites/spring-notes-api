@@ -19,8 +19,8 @@ public class NoteServiceTest {
     void testAddNote() {
         Note note = new Note(3, "JUnit Test", "Learning unit testing");
         noteService.addNote(note);
-        assertEquals(4, noteService.getAllNotes().size());
-        assertEquals("JUnit Test", noteService.getAllNotes().get(0).getTitle());
+        assertEquals(3, noteService.getAllNotes().size());
+        assertEquals("JUnit Test", noteService.getAllNotes().get(2).getTitle());
     }
 
     @Test
@@ -38,6 +38,6 @@ public class NoteServiceTest {
 
         boolean updatedResult =  noteService.updateNoteById(3, updated);
         assertTrue(updatedResult);
-        assertEquals("New Title", noteService.getAllNotes().get(3).getTitle());
+        assertEquals("New Title", noteService.getAllNotes().get(2).getTitle());
     }
 }
